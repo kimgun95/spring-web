@@ -29,6 +29,7 @@ dependencies {
     runtimeOnly("com.mysql:mysql-connector-j")
     implementation("org.springframework.boot:spring-boot-starter-data-rest")
     implementation("org.springframework.data:spring-data-rest-hal-explorer")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
