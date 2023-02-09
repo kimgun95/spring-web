@@ -3,7 +3,7 @@ management.endpoints.web.exposure.include: "*"
 
 logging:
   level:
-    com.fastcampus.projectboard: debug
+    com.example.springweb: debug
     org.springframework.web.servlet: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
 
@@ -26,3 +26,5 @@ spring:
     rest:
       base-path: /api
       detection-strategy: annotated
+  thymeleaf3:
+    decoupled-logic: true
