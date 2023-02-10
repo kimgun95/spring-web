@@ -6,7 +6,7 @@ plugins {
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_11
 
 configurations {
     compileOnly {
@@ -30,6 +30,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-rest")
     implementation("org.springframework.data:spring-data-rest-hal-explorer")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity5")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
