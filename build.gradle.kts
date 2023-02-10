@@ -31,6 +31,8 @@ dependencies {
     implementation("org.springframework.data:spring-data-rest-hal-explorer")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+    implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity5")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
