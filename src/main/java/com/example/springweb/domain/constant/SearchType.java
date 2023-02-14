@@ -1,4 +1,4 @@
-package com.example.springweb.type;
+package com.example.springweb.domain.constant;
 
 import lombok.Getter;
 
