@@ -18,7 +18,7 @@
 </header>
 
 <main id="article-main" class="container">
-    <header id="article-header">
+    <header id="article-header" class="py-5 text-center">
         <h1>첫번째 글</h1>
     </header>
 
@@ -33,7 +33,7 @@
         </section>
 
         <article id="article-content" class="col-md-9 col-lg-8">
-            <p>본문<br><br></p>
+            <pre>본문</pre>
         </article>
     </div>
 
@@ -49,6 +49,7 @@
     <div class="row g-5">
         <section>
             <form class="row g-3" id="comment-form">
+                <input type="hidden" class="article-id">
                 <div class="col-md-9 col-lg-8">
                     <label for="comment-textbox" hidden>댓글</label>
                     <textarea class="form-control" id="comment-textbox" placeholder="댓글 쓰기.." rows="3" required></textarea>
@@ -72,20 +73,25 @@
                                     Lorem ipsum dolor sit amet
                                 </p>
                             </div>
-                            <div class="col-2 mb-3">
+                            <div class="col-2 mb-3 align-self-center">
                                 <button type="submit" class="btn btn-outline-danger" id="delete-comment-button">삭제</button>
                             </div>
                         </div>
                     </form>
                 </li>
                 <li>
-                    <div>
-                        <strong>Gun</strong>
-                        <small><time>2022-01-01</time></small>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                            Lorem ipsum dolor sit amet
-                        </p>
+                    <div class="row">
+                        <div class="col-md-10 col-lg-9">
+                            <strong>Uno2</strong>
+                            <small><time>2022-01-01</time></small>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                        <div class="col-2 mb-3">
+                            <button type="submit" class="btn btn-outline-danger" hidden>삭제</button>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -109,7 +115,6 @@
             </ul>
         </nav>
     </div>
-
 </main>
 
 <footer id="footer">
@@ -118,6 +123,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
 </body>
 </html>
