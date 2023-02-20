@@ -16,11 +16,11 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 @DisplayName("비즈니스 로직 - 페이지네이션")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE, classes = PaginationService.class)
-public class PaginationServiceTest {
+class PaginationServiceTest {
 
     private final PaginationService sut;
 
-    public PaginationServiceTest(@Autowired  PaginationService paginationService) {
+    PaginationServiceTest(@Autowired  PaginationService paginationService) {
         this.sut = paginationService;
     }
 

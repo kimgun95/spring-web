@@ -20,12 +20,12 @@ class FormDataEncoderTest {
 
     private final FormDataEncoder formDataEncoder;
 
-    public FormDataEncoderTest(@Autowired FormDataEncoder formDataEncoder) {
+    FormDataEncoderTest(@Autowired FormDataEncoder formDataEncoder) {
         this.formDataEncoder = formDataEncoder;
     }
 
     @TestComponent
-    public static class EmptyConfig {}
+    static class EmptyConfig {}
 
     @DisplayName("객체를 넣으면, url encoding 된 form body data 형식의 문자열을 돌려준다.")
     @Test

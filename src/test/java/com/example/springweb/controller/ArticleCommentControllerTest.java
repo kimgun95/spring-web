@@ -1,6 +1,5 @@
 package com.example.springweb.controller;
 
-import com.example.springweb.config.SecurityConfig;
 import com.example.springweb.config.TestSecurityConfig;
 import com.example.springweb.dto.ArticleCommentDto;
 import com.example.springweb.dto.request.ArticleCommentRequest;
@@ -29,7 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DisplayName("View 컨트롤러 - 댓글")
 @Import({TestSecurityConfig.class, FormDataEncoder.class})
 @WebMvcTest(ArticleCommentController.class)
-public class ArticleCommentControllerTest {
+class ArticleCommentControllerTest {
 
     private final MockMvc mvc;
     private final FormDataEncoder formDataEncoder;
@@ -38,7 +37,7 @@ public class ArticleCommentControllerTest {
     private ArticleCommentService articleCommentService;
 
 
-    public ArticleCommentControllerTest(
+    ArticleCommentControllerTest(
             @Autowired MockMvc mvc,
             @Autowired FormDataEncoder formDataEncoder
     ) {

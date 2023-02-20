@@ -8,7 +8,6 @@ import com.example.springweb.dto.UserAccountDto;
 import com.example.springweb.repository.ArticleCommentRepository;
 import com.example.springweb.repository.ArticleRepository;
 import com.example.springweb.repository.UserAccountRepository;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,7 +18,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -27,7 +25,7 @@ import static org.mockito.BDDMockito.*;
 
 @DisplayName("비즈니스 로직 - 댓글")
 @ExtendWith(MockitoExtension.class)
-public class ArticleCommentServiceTest {
+class ArticleCommentServiceTest {
 
     @InjectMocks private ArticleCommentService sut;
     @Mock private ArticleRepository articleRepository;

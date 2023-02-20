@@ -29,7 +29,7 @@ import static org.mockito.BDDMockito.*;
 
 @DisplayName("비즈니스 로직 - 게시글")
 @WebMvcTest(MockitoExtension.class)
-public class ArticleServiceTest {
+class ArticleServiceTest {
 
     @InjectMocks private ArticleService sut;
     @Mock private ArticleRepository articleRepository;
