@@ -24,6 +24,9 @@ class FormDataEncoderTest {
         this.formDataEncoder = formDataEncoder;
     }
 
+    /**
+     * 어떤 config도 필요하지 않은 테스트임을 나타내기 위해 테스트용 빈 컴포넌트를 사용함.
+     */
     @TestComponent
     static class EmptyConfig {}
 
